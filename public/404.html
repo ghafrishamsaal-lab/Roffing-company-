@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PeakShield Roofing</title>
+    <script>
+      // Fallback redirect for GitHub Pages direct link navigation
+      (function() {
+        var path = window.location.pathname;
+        var parts = path.split('/').filter(Boolean);
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // If repo path exists like /repo-name/service-page
+        if (parts.length > 1) {
+          var repo = parts[0];
+          var subRoute = parts.slice(1).join('/');
+          window.location.replace('/' + repo + '/#/' + subRoute + search + hash);
+        } else if (parts.length === 1 && !hash) {
+          // e.g. /about -> /#/about or /repo-name -> /repo-name/#/
+          window.location.replace('/' + parts[0] + '/#/' + search + hash);
+        } else {
+          window.location.replace('/' + (hash || '#/'));
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to PeakShield Roofing...</p>
+  </body>
+</html>
