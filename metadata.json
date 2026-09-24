@@ -1,0 +1,6 @@
+{
+  "name": "PeakShield Roofing - Commercial & Residential Roofing Specialists",
+  "description": "PeakShield Roofing provides professional commercial and residential roofing solutions, inspections, replacements, repairs, and 24/7 storm damage restoration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
